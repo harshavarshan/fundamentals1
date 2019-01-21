@@ -1,0 +1,5 @@
+<script>
+const bit = (ar, fil) =>
+  ar.reduce((ac, val, i) => (ac[fil[i] ? 0 : 1].push(val), ac), [[], []]);
+alert(bit([1, 2, 3, 4], [true, true, false, true]));
+</script>

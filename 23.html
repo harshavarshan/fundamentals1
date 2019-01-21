@@ -1,0 +1,6 @@
+<script>
+const fil = (arr, fn) =>
+  arr.filter((v, i) => arr.every((x, j) => (i === j) === fn(v, x, i, j)));
+
+alert(fil([1, 2, 2, 3, 4, 4, 5])); 
+</script>

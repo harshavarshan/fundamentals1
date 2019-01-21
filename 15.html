@@ -1,0 +1,6 @@
+<script>
+const reduce = (arr, comparator = (a, b) => a - b) =>
+  arr.reduce((a, b) => (comparator(a, b) >= 0 ? b : a));
+alert(reduce([2, 4, 1])); 
+alert(reduce([50, 10, 40], (a, b) => b - a)); 
+</script>

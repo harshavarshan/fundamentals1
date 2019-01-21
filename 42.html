@@ -1,0 +1,6 @@
+<script>
+	var coalesceFactory = valid => (...args) => args.find(valid);
+var customCoalesce = coalesceFactory(_ => ![null, undefined, '', NaN].includes(_));
+alert(customCoalesce(undefined, null, NaN, '', 'Waldo'));
+
+</script>
